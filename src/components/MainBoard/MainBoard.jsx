@@ -15,6 +15,9 @@ import lockedPadlock from "../../assets/icons/lockedPadlock.svg";
 
 import styles from "./MainBoard.module.css";
 
+import Chart from "../Chart/Chart";
+import Chart2 from "../Chart/Chart2";
+
 const MainBoard = ({
   individualsData,
   companiesData,
@@ -79,10 +82,12 @@ const MainBoard = ({
           <div className={styles.display}>
             <div className={styles.displayCharts}>
               <div className={styles.upperChart}>
+		<Chart/>
                 {/* Individuals Chart */}
                 {/* Required data: individuals */}
               </div>
               <div className={styles.lowerChart}>
+		<Chart2/>
                 {/* Companies Chart */}
                 {/* Required data: companies */}
               </div>
